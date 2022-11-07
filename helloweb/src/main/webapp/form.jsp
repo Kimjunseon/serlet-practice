@@ -29,8 +29,16 @@
 		<br/><br/>
 		
 		자기소개:
+		<br/>
+		<textarea name="profile"></textarea>
 		<br/><br/>
-		<textarea name="submit"></textarea>
+		
+		취미:
+		<br/>
+		코딩 <input type="checkbox" name="hobby" value="coding"/>
+		술먹기 <input type="checkbox" name="hobby" value="drinking"/>
+		요리 <input type="checkbox" name="hobby" value="cooking"/>
+		수영 <input type="checkbox" name="hobby" value="swimming"/>
 		<br/><br/>
 		
 		<input type="submit" value="회원가입" />

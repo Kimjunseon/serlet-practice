@@ -51,10 +51,9 @@
 		문장입니다.~~<br/>
 	</p>
 	
-	<a href="hello.jsp">hello로 가기</a>
+	<a href="hello.jsp?name=김준선">hello로 가기</a>
 	<br/>
 	<a href="form.jsp">form으로 가기</a>
-	
 	
 </body>
 </html>

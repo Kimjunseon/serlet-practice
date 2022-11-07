@@ -5,9 +5,8 @@
 		<artifactId>servlet-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>emaillist01</artifactId>
+	<artifactId>guestbook01</artifactId>
 	<packaging>war</packaging>
-	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -26,7 +25,7 @@
 	
 
 	<build>
-		<finalName>emaillist01</finalName>
+		<finalName>guestbook01</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -35,5 +34,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>

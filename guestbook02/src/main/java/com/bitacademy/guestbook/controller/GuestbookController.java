@@ -33,14 +33,6 @@ public class GuestbookController extends HttpServlet {
 			new GuestbookDao().insert(vo);
 			response.sendRedirect(request.getContextPath() + "/gb?a=index");
 		
-		} else if("deleteform?no=" + vo.getNo().equals(action)) {
-			int count = list.size();
-			for(GuestbookVo vo : list) {
-				vo.getNo();
-			}
-			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
-			rd.forward(request, response);
-			
 		} else {
 			List<GuestbookVo> list = new GuestbookDao().findAll();
 			request.setAttribute("list", list);

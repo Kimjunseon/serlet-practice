@@ -18,7 +18,7 @@
 			</tr>
 		</table>
 		<br><br>
-		<a href="/guestbook01">메인으로 돌아가기</a>
+		<a href="/guestbook02/gb?a=index.jps">메인으로 돌아가기</a>
 	</form>
 </body>
 </html>

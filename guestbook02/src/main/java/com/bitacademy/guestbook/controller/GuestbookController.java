@@ -1,8 +1,7 @@
 package com.bitacademy.guestbook.controller;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -33,6 +32,15 @@ public class GuestbookController extends HttpServlet {
 			vo.setContents(contents);
 			new GuestbookDao().insert(vo);
 			response.sendRedirect(request.getContextPath() + "/gb?a=index");
+		
+		} else if("deleteform?no=" + vo.getNo().equals(action)) {
+			int count = list.size();
+			for(GuestbookVo vo : list) {
+				vo.getNo();
+			}
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
+			rd.forward(request, response);
+			
 		} else {
 			List<GuestbookVo> list = new GuestbookDao().findAll();
 			request.setAttribute("list", list);

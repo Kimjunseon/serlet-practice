@@ -36,7 +36,7 @@
 				<td><%=vo.getName() %></td>
 				<td><%=vo.getRegDate() %></td>
 				<td>
-					<a href="deleteform.jsp?no=<%=vo.getNo() %>">삭제</a>
+					<a href="<%=request.getContextPath() %>/gb?a=deleteform?no=<%=vo.getNo() %>">삭제</a>
 				</td>
 			</tr>
 			<tr>

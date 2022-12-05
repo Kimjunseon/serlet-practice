@@ -25,7 +25,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>jstlel</finalName>
+		<finalName>jstlel</finalName> 
 	</build>
 
 </project>
